@@ -10,7 +10,7 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
       * @dev _baseTokenURI for computing {tokenURI}. If set, the resulting URI for each
       * token will be the concatenation of the `baseURI` and the `tokenId`.
       */
-    string _baseTokenURI;
+    string _baseTokenURI; 
 
     //  _price is the price of one Crypto Dev NFT
     uint256 public _price = 0.01 ether;
@@ -44,7 +44,7 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
       * Constructor for Crypto Devs takes in the baseURI to set _baseTokenURI for the collection.
       * It also initializes an instance of whitelist interface.
       */
-    constructor (string memory baseURI, address whitelistContract) ERC721("Crypto Devs", "CD") {
+    constructor (string memory baseURI, address whitelistContract) ERC721("Brahmaputra NFTs", "BPH") {
         _baseTokenURI = baseURI;
         whitelist = IWhitelist(whitelistContract);
     }
